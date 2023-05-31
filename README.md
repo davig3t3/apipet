@@ -42,4 +42,19 @@
 #### 1.2.1.4 Diagrama de estado (mínimo 1)
 ##### 1.2.1.4.1 <Modelado estado objeto/transacción/opción 1>
 ##### 1.2.1.4.2 <Modelado estado ... N>
- 
+
+### 1.2.2 Vista lógica
+#### 1.2.2.1 Diagrama de clases {Subdivisiones por microservicios}
+#### 1.2.2.2 Diagrama de objetos
+#### 1.2.2.3 Modelo de datos {SQL / NoSQL} {Subdivisiones por microservicio}
+
+### 1.2.3 Vista implementación
+#### 1.2.3.1 Diagrama de componentes
+#### 1.2.3.2 Diagrama de paquetes
+
+### 1.2.4 Vista de procesos
+#### 1.2.4.1 Diagrama de secuencia
+#### 1.2.4.2 Diagrama de colaboración
+
+### 1.2.5 Vista física
+#### 1.2.5.1 Diagrama de despliegue

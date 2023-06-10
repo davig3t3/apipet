@@ -1,5 +1,8 @@
 package co.edu.uco.apipet.service.usecase.especie;
 
-public interface ListarEspecies {
+import co.edu.uco.apipet.service.domain.EspecieDomain;
+import co.edu.uco.apipet.service.usecase.UseCaseList;
+
+public interface ListarEspecies extends UseCaseList<EspecieDomain>{
 
 }

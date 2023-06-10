@@ -1,5 +1,8 @@
 package co.edu.uco.apipet.service.usecase.especie;
 
-public interface RegistrarEspecie {
+import co.edu.uco.apipet.service.domain.EspecieDomain;
+import co.edu.uco.apipet.service.usecase.UseCase;
+
+public interface RegistrarEspecie extends UseCase<EspecieDomain>{
 
 }

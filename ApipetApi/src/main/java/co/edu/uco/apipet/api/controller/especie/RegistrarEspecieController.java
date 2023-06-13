@@ -1,4 +1,4 @@
-package co.edu.uco.apipet.api.controller.tipoCuidado;
+package co.edu.uco.apipet.api.controller.especie;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -8,21 +8,23 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import co.edu.uco.apipet.dto.TipoCuidadoDTO;
-import co.edu.uco.apipet.service.facade.tipoCuidado.RegistrarTipoCuidadosUseCaseFacade;
+import co.edu.uco.apipet.dto.EspecieDTO;
+import co.edu.uco.apipet.service.facade.especie.RegistrarEspeciesUseCaseFacade;
 
 @RestController
-@RequestMapping("apipet/api/v1/tipocuidado")
+@RequestMapping("apipet/api/v1/especie")
 
-public class RegistrarTipoCuidadoController {
+
+public class RegistrarEspecieController {
 	
 	@Autowired
-	private RegistrarTipoCuidadosUseCaseFacade facade;
+	private RegistrarEspeciesUseCaseFacade facade;
 	
-	@PostMapping("/registrartipocuidado")
-	public ResponseEntity<String> execute(@RequestBody TipoCuidadoDTO tipoCuidadoDTO){
-		facade.execute(tipoCuidadoDTO);
+	@PostMapping("/registrarespecie")
+	public ResponseEntity<String> execute(@RequestBody EspecieDTO especieDTO){
+		facade.execute(especieDTO);
 		return new ResponseEntity<>("Exito",HttpStatus.ACCEPTED);
 	}
+	
 
 }

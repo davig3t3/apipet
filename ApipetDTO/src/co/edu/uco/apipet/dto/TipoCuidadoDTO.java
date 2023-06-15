@@ -6,11 +6,29 @@ import static co.edu.uco.apipet.crosscutting.helper.StringHelper.EMPTY;
 
 public class TipoCuidadoDTO {
 	
-	private UUID codigo;
-	private String nombreTipoCuidado;
-	private String descripcion;
+	UUID codigo;
+	String nombre_tipo_cuidado;
+	String descripcion;
 	
-	public TipoCuidadoDTO() {
+	public UUID getCodigo() {
+		return codigo;
+	}
+	public void setCodigo(final UUID codigo) {
+		this.codigo = codigo;
+	}
+	public String getNombreTipoCuidado() {
+		return nombre_tipo_cuidado;
+	}
+	public void setNombreTipoCuidado(final String nombreTipoCuidado) {
+		this.nombre_tipo_cuidado = nombreTipoCuidado;
+	}
+	public String getDescripcion() {
+		return descripcion;
+	}
+	public void setDescripcion(final String descripcion) {
+		this.descripcion = descripcion;
+	}
+	/*public TipoCuidadoDTO() {
 		setCodigo(getDefaultUUID());
 		setNombreTipoCuidado(EMPTY);
 		setDescripcion(EMPTY);
@@ -37,10 +55,10 @@ public class TipoCuidadoDTO {
 		this.codigo = codigo;
 	}
 	public String getNombreTipoCuidado() {
-		return nombreTipoCuidado;
+		return nombre_tipo_cuidado;
 	}
 	public void setNombreTipoCuidado(String nombreTipoCuidado) {
-		this.nombreTipoCuidado = nombreTipoCuidado;
+		this.nombre_tipo_cuidado = nombreTipoCuidado;
 	}
 	public String getDescripcion() {
 		return descripcion;
@@ -48,7 +66,7 @@ public class TipoCuidadoDTO {
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
-	
+	*/
 	
 
 }

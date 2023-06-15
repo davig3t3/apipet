@@ -4,26 +4,26 @@ import java.util.UUID;
 
 public class EspecieDomain {
 	
-	private UUID codigo;
-	private String nombreEspecie;
-	private String descripcion;
+	UUID codigo;
+	String nombre_especie;
+	String descripcion;
 	
 	public UUID getCodigo() {
 		return codigo;
 	}
-	public void setCodigo(UUID codigo) {
+	public void setCodigo(final UUID codigo) {
 		this.codigo = codigo;
 	}
 	public String getNombreEspecie() {
-		return nombreEspecie;
+		return nombre_especie;
 	}
-	public void setNombreEspecie(String nombreEspecie) {
-		this.nombreEspecie = nombreEspecie;
+	public void setNombreEspecie(final String nombreEspecie) {
+		this.nombre_especie = nombreEspecie;
 	}
 	public String getDescripcion() {
 		return descripcion;
 	}
-	public void setDescripcion(String descripcion) {
+	public void setDescripcion(final String descripcion) {
 		this.descripcion = descripcion;
 	}
 	

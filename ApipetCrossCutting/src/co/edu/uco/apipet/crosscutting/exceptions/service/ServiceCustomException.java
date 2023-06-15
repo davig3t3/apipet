@@ -4,8 +4,11 @@ import co.edu.uco.apipet.crosscutting.exceptions.ApipetCustomException;
 import co.edu.uco.apipet.crosscutting.exceptions.enumeration.LayerException;
 import static co.edu.uco.apipet.crosscutting.helper.StringHelper.EMPTY;
 
+import java.io.Serial;
+
 public class ServiceCustomException extends ApipetCustomException{
 
+	@Serial
 	private static final long serialVersionUID = -7581138972968503560L;
 
     private ServiceCustomException(Exception rootException, String technicalMessage, String userMessage){

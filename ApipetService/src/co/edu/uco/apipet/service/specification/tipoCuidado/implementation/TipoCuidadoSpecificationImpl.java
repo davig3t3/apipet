@@ -22,14 +22,14 @@ public class TipoCuidadoSpecificationImpl implements TipoCuidadoSpecification{
 			throw ServiceCustomException.createTechnicalException("El tipo de cuidado ya existe en la base de datos");
 		}
 		
-		if(!verifyTipoCuidadoAtributes(data)) {
+		/*if(!verifyTipoCuidadoAtributes(data)) {
 			throw ServiceCustomException.createTechnicalException("Los atributos del tipo de cuidado son invalidos ó están vacios");
-		}
+		}*/
 		
 	}
 	
-	private boolean verifyTipoCuidadoAtributes(TipoCuidadoDomain domain) {
-		return !isDefaultUUID(domain.getCodigo()) && !isEmpty(domain.getNombreTipoCuidado()) && !isEmpty(domain.getDescripcion());
-	}
+	/*private boolean verifyTipoCuidadoAtributes(TipoCuidadoDomain domain) {
+		return !isDefaultUUID(domain.getCodigo()) || !isEmpty(domain.getNombreTipoCuidado()) || !isEmpty(domain.getDescripcion());
+	}*/
 
 }

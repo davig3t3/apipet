@@ -5,7 +5,7 @@ import java.util.UUID;
 public class TipoCuidadoDomain {
 	
 	private UUID codigo;
-	private String nombreTipoCuidado;
+	private String nombre_tipo_cuidado;
 	private String descripcion;
 	
 	public UUID getCodigo() {
@@ -15,10 +15,10 @@ public class TipoCuidadoDomain {
 		this.codigo = codigo;
 	}
 	public String getNombreTipoCuidado() {
-		return nombreTipoCuidado;
+		return nombre_tipo_cuidado;
 	}
 	public void setNombreTipoCuidado(String nombreTipoCuidado) {
-		this.nombreTipoCuidado = nombreTipoCuidado;
+		this.nombre_tipo_cuidado = nombreTipoCuidado;
 	}
 	public String getDescripcion() {
 		return descripcion;

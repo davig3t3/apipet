@@ -20,20 +20,18 @@ public class EspecieSpecificationImpl implements EspecieSpecification{
 	public void isSatisfied(EspecieDomain data) {
 		
 		if(repository.findById(data.getCodigo()).isPresent()) {
-			//Hacer execepciones
 			throw ServiceCustomException.createTechnicalException("La especie ya existe en la base de datos");
 		}
 		
-		if(!verifyEspecieAtributes(data)) {
-			//Hacer Excepciones
+		/*if(!verifyEspecieAtributes(data)) {
 			throw ServiceCustomException.createTechnicalException("Los atributos de la especie son invalidos ó están vacios");
-		}
+		}*/
 		
 	}
 	
-	private boolean verifyEspecieAtributes(EspecieDomain domain) {
-		return !isDefaultUUID(domain.getCodigo()) && !isEmpty(domain.getNombreEspecie()) && !isEmpty(domain.getDescripcion());
-	}
+	/*private boolean verifyEspecieAtributes(EspecieDomain domain) {
+		return !isDefaultUUID(domain.getCodigo()) || !isEmpty(domain.getNombreEspecie()) || !isEmpty(domain.getDescripcion());
+	}*/
 
 }
 

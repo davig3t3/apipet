@@ -4,8 +4,8 @@ import java.util.UUID;
 
 public interface TipoCuidadoBuilder {
 	
-	TipoCuidadoBuilder setCodigo (UUID codigo);
-	TipoCuidadoBuilder setNombreTipoCuidado (String nombreTipoCuidado);
-	TipoCuidadoBuilder setDescripcion (String descripcion);
+	TipoCuidadoBuilder setCodigo (final UUID codigo);
+	TipoCuidadoBuilder setNombreTipoCuidado (final String nombreTipoCuidado);
+	TipoCuidadoBuilder setDescripcion (final String descripcion);
 
 }

@@ -9,6 +9,6 @@ spring:
             name: spring-azure-apipet
             endpoint: https://spring-azure-apipet.vault.azure.net/
           property-source-enabled: true
-    database:
-      secret:
-        value: ${spring-data-postgres-uri}
+database:
+  secret:
+    value: ${spring-data-postgres-uri}

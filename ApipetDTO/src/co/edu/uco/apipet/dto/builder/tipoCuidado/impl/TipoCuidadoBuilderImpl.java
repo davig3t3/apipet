@@ -6,26 +6,23 @@ import co.edu.uco.apipet.dto.builder.tipoCuidado.TipoCuidadoBuilder;
 
 public class TipoCuidadoBuilderImpl implements TipoCuidadoBuilder{
 	
-	private UUID codigo;
-	private String nombreTipoCuidado;
-	private String descripcion;
+	//private UUID codigo;
+	//private String nombre_tipo_cuidado;
+	//private String descripcion;
 
 	@Override
-	public TipoCuidadoBuilder setCodigo(UUID codigo) {
-		this.codigo = codigo;
-		return this;
+	public TipoCuidadoBuilder setCodigo(final UUID codigo) {
+		return null;
 	}
 
 	@Override
-	public TipoCuidadoBuilder setNombreTipoCuidado(String nombreTipoCuidado) {
-		this.nombreTipoCuidado = nombreTipoCuidado;
-		return this;
+	public TipoCuidadoBuilder setNombreTipoCuidado(final String nombreTipoCuidado) {
+		return null;
 	}
 
 	@Override
-	public TipoCuidadoBuilder setDescripcion(String descripcion) {
-		this.descripcion = descripcion;
-		return this;
+	public TipoCuidadoBuilder setDescripcion(final String descripcion) {
+		return null;
 	}
 	
 }

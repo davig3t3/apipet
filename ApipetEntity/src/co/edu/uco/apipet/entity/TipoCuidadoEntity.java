@@ -17,7 +17,7 @@ import lombok.NoArgsConstructor;
 public class TipoCuidadoEntity {
 
 	@Id
-	private UUID codigo;
-	private String nombreTipoCuidado;
-	private String descripcion;
+	UUID codigo;
+	String nombre_tipo_cuidado;
+	String descripcion;
 }
